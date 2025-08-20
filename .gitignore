@@ -1,0 +1,11 @@
+# Gradle caches
+**/.gradle/
+
+**/build/
+
+**/run/
+
+**/libs/
+
+**/.idea/
+**/.kotlin/

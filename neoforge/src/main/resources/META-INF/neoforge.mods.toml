@@ -1,0 +1,45 @@
+modLoader = "javafml"
+loaderVersion = "[9,)"
+#issueTrackerURL = ""
+license = "Insert License Here"
+
+[[mods]]
+modId = "examplemod"
+version = "${version}"
+displayName = "ExampleMod"
+authors = "Me!"
+description = '''
+This is an example description! Tell everyone what your mod is about!
+'''
+#logoFile = ""
+
+[[dependencies.examplemod]]
+modId = "neoforge"
+type = "required"
+versionRange = "[21.7,)"
+ordering = "NONE"
+side = "BOTH"
+
+[[dependencies.examplemod]]
+modId = "minecraft"
+type = "required"
+versionRange = "[1.21.7,)"
+ordering = "NONE"
+side = "BOTH"
+
+[[dependencies.examplemod]]
+modId = "architectury"
+type = "required"
+versionRange = "[17.0.6,)"
+ordering = "AFTER"
+side = "BOTH"
+
+[[dependencies.examplemod]]
+modId = "kotlinforforge"
+mandatory = true
+versionRange = "[${kotlin_forge_version}]"
+ordering = "AFTER"
+side = "BOTH"
+
+[[mixins]]
+config = "examplemod.mixins.json"
